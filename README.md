@@ -22,4 +22,4 @@ Os testes usam o cliente de teste do Flask, que não abre a porta de rede. Para 
 ## Quem fez o quê
 Gabriel Ramos Colaço (aluno A, dupla-12, porta 5000): criei a página de status com testes antes da publicação, conferi a visibilidade da imagem, fiz o rollback no repositório com git revert, publiquei a v3 e criei este README.
 
-A completar pelo aluno B
+Nicolly Janaina de SOuza e Silva(Aluna B, dupla-12, porta 5001) Criei o publicar-imagem.yml e acrescentei as linhas ARG e ENV no Dockerfile, para a API mostrar a versão da imagem. Publiquei a v1 e simulei a falha da v2, mudando a porta do app.py de 5000 para 5001. Os testes passaram, mas o contêiner não respondeu, e vi no docker logs que a API escutava na 5001. Fiz o rollback operacional para a v1 em cerca de 3,6 segundos. Minha variação foi a dupla-12, com a porta 5000 e a mensagem "Olá da minha API.
